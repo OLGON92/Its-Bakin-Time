@@ -15,14 +15,20 @@ namespace Bakery.Models
     {
       int totalPrice = 0;
       int totalLoaves = BreadLoafAmt;
-      
+
       if(totalLoaves == 1)
       {
         return totalPrice = 5;
       }
-      else if(totalLoaves == 2);
+      else if(totalLoaves == 2)
       {
         return totalPrice = 10;
+      }
+      else 
+      {
+       int breadDeduction = (totalLoaves - (totalLoaves % 3)) /3 * BreadLoafCost;
+       totalPrice = (totalLoaves * BreadLoafCost) - breadDeduction;
+       return totalPrice;
       }
       
     }
