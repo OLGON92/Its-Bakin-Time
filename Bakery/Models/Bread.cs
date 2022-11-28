@@ -15,11 +15,16 @@ namespace Bakery.Models
     {
       int totalPrice = 0;
       int totalLoaves = BreadLoafAmt;
+      
       if(totalLoaves == 1)
       {
         return totalPrice = 5;
       }
-      else return 6;
+      else if(totalLoaves == 2);
+      {
+        return totalPrice = 10;
+      }
+      
     }
   }
 }
