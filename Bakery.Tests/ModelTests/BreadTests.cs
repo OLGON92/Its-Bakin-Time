@@ -34,18 +34,21 @@ namespace Bakery.Tests
       Assert.AreEqual(5, newBread.GetBreadPrice());
     }
 
+    [TestMethod]
     public void GetBreadPrice_FigureOutPriceOf2Loaf_Int()
     {
       Bread newBread = new Bread(2);
       Assert.AreEqual(10, newBread.GetBreadPrice());
     }
 
+    [TestMethod]
     public void GetBreadPrice_FigureOutPriceOf3Loaf_Int()
     {
       Bread newBread = new Bread(3);
       Assert.AreEqual(10, newBread.GetBreadPrice());
     }
 
+    [TestMethod]
     public void GetBreadPrice_FigureOutPriceOf4Loaf_Int()
     {
       Bread newBread = new Bread(4);
