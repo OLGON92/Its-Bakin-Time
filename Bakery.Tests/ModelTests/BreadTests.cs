@@ -21,9 +21,17 @@ namespace Bakery.Tests
       int breadLoafAmt = 4;
       Bread newBread = new Bread(breadLoafAmt);
       //Act
-      int resultAmt = newBread.BreadTotalAmt;
+      int resultAmt = newBread.BreadLoafAmt;
       //Assert
       Assert.AreEqual(breadLoafAmt, resultAmt);
+    }
+
+    [TestMethod]
+
+    public void GetBreadPrice_FigureOutPriceOf1Loaf_Int()
+    {
+      Bread newBread = new Bread(1);
+      Assert.AreEqual(5, newBread.GetBreadPrice());
     }
   } 
 }
