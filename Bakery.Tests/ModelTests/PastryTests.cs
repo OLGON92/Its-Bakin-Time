@@ -32,11 +32,12 @@ namespace Bakery.Tests
     {
       //Arrange
       int pastryAmt = 1;
+      int pastryTotal = 2;
       Pastry newPastry = new Pastry(pastryAmt);
       //Act
       int resultTotal = newPastry.GetPastryPrice();
       //Assert
-      Assert.AreEqual(2, resultTotal);
+      Assert.AreEqual(pastryTotal, resultTotal);
     }
 
     [TestMethod]
@@ -45,11 +46,12 @@ namespace Bakery.Tests
     {
       //Arrange
       int pastryAmt = 2;
+      int pastryTotal = 4;
       Pastry newPastry = new Pastry(pastryAmt);
       //Act
       int resultTotal = newPastry.GetPastryPrice();
       //Assert
-      Assert.AreEqual(4, resultTotal);
+      Assert.AreEqual(pastryTotal, resultTotal);
     }
 
     [TestMethod]
@@ -58,11 +60,12 @@ namespace Bakery.Tests
     {
       //Arrange
       int pastryAmt = 3;
+      int pastryTotal = 5;
       Pastry newPastry = new Pastry(pastryAmt);
       //Act
       int resultTotal = newPastry.GetPastryPrice();
       //Assert
-      Assert.AreEqual(5, resultTotal);
+      Assert.AreEqual(pastryTotal, resultTotal);
     }
 
     [TestMethod]
@@ -71,11 +74,12 @@ namespace Bakery.Tests
     {
       //Arrange
       int pastryAmt = 4;
+      int pastryTotal = 7;
       Pastry newPastry = new Pastry(pastryAmt);
       //Act
       int resultTotal = newPastry.GetPastryPrice();
       //Assert
-      Assert.AreEqual(7, resultTotal);
+      Assert.AreEqual(pastryTotal, resultTotal);
     }
   } 
 }
