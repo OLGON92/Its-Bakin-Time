@@ -95,5 +95,19 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(pastryTotal, resultTotal);
     }
+
+    [TestMethod]
+
+    public void GetPastryPrice_FigureOutPriceOf6Pastry_Int()
+    {
+      //Arrange
+      int pastryAmt = 6;
+      int pastryTotal = 10;
+      Pastry newPastry = new Pastry(pastryAmt);
+      //Act
+      int resultTotal = newPastry.GetPastryPrice();
+      //Assert
+      Assert.AreEqual(pastryTotal, resultTotal);
+    }
   } 
 }
