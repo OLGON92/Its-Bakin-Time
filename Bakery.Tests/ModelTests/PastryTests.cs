@@ -38,5 +38,18 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(2, resultTotal);
     }
+
+    [TestMethod]
+
+    public void GetPastryPrice_FigureOutPriceOf2Pastry_Int()
+    {
+      //Arrange
+      int pastryAmt = 2;
+      Pastry newPastry = new Pastry(pastryAmt);
+      //Act
+      int resultTotal = newPastry.GetPastryPrice();
+      //Assert
+      Assert.AreEqual(4, resultTotal);
+    }
   } 
 }
