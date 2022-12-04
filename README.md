@@ -34,9 +34,8 @@ _This is my eighth project for Epicodus that is meant to show off my understandi
 
 ## Known Bugs
 
-* _Has no interface yet_
-* _The Pastry.cs is not working yet_ 
-* _There are also no tests for Pastry.cs yet_
+* _Works as long as you follow the instructions on the UI console._
+
 
 ## License
 
